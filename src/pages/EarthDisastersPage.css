@@ -1,0 +1,56 @@
+.earth-disasters-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+
+.disaster-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.disaster-card {
+  text-align: left;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  width: 100%;
+}
+.disaster-card:hover {
+  border-color: var(--border-strong);
+}
+.disaster-card--active {
+  border-color: var(--border-accent);
+  background: var(--accent-soft);
+}
+
+.disaster-card-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.disaster-card-time {
+  margin-left: auto;
+  font-size: 10.5px;
+}
+
+.disaster-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.disaster-card-region {
+  font-size: 11.5px;
+}
+
+@media (max-width: 1150px) {
+  .earth-disasters-grid {
+    grid-template-columns: 1fr;
+  }
+}

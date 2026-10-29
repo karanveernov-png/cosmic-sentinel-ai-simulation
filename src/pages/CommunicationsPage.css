@@ -1,0 +1,17 @@
+.comms-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.comms-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+
+@media (max-width: 1150px) {
+  .comms-grid {
+    grid-template-columns: 1fr;
+  }
+}
